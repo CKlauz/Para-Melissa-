@@ -1,0 +1,234 @@
+/* Player de música opcional */
+.musica-box {
+  background: linear-gradient(90deg, #ffe0ec 0%, #ffb6b9 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(230,57,70,0.08);
+  padding: 16px 24px;
+  margin: 24px auto 18px auto;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 20px;
+  color: #e63946;
+}
+.musica-box label {
+  font-weight: bold;
+  font-size: 20px;
+  color: #e63946;
+}
+.musica-box audio {
+  flex: 1;
+  outline: none;
+  
+}
+/* Barra de navegação fixa dos dias */
+.dias-top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #ffb6b9 0%, #ffe0ec 100%);
+  box-shadow: 0 2px 12px rgba(230,57,70,0.08);
+  z-index: 100;
+  padding: 10px 0;
+}
+.dias-top-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dias-top-nav a {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.10);
+  transition: background 0.3s, transform 0.2s;
+}
+.dias-top-nav a:hover {
+  background: #ffb6b9;
+  color: #e63946;
+  transform: scale(1.08);
+}
+header {
+  margin-top: 70px;
+}
+/* Navegação dos dias */
+.dias-nav {
+  width: 100%;
+  background: linear-gradient(90deg, #ffb6b9 0%, #ffe0ec 100%);
+  padding: 18px 0 8px 0;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 2px 12px rgba(230,57,70,0.08);
+  margin-bottom: 18px;
+}
+.dias-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dias-nav a {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.10);
+  transition: background 0.3s, transform 0.2s;
+}
+.dias-nav a:hover {
+  background: #ffb6b9;
+  color: #e63946;
+  transform: scale(1.08);
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffe0ec 0%, #e63946 100%);
+  color: #7a0000;
+  text-align: center;
+}
+
+
+header {
+  background: linear-gradient(90deg, #e63946 0%, #ffb6b9 100%);
+  color: #fff;
+  padding: 30px 0 20px 0;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.15);
+  position: relative;
+}
+header h1::after {
+  content: " \2764";
+  color: #e63946;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+
+main {
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 16px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 24px rgba(230,57,70,0.10);
+}
+
+
+#timer {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 24px 0;
+  color: #e63946;
+  letter-spacing: 2px;
+  background: #fff0f6;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 16px 32px;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.08);
+}
+#timer span {
+  color: #7a0000;
+  text-shadow: 0 1px 2px #fff;
+}
+
+
+footer {
+  background: linear-gradient(90deg, #e63946 0%, #ffb6b9 100%);
+  color: #fff;
+  padding: 16px 0;
+  margin-top: 40px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px 8px rgba(230,57,70,0.10);
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  color: #e63946;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 30px;
+  color: #7a0000;
+  font-style: italic;
+}
+a {
+  color: #d80f52;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.10);
+  transition: background 0.3s, transform 0.2s;
+}
+
+select, input[type="text"] {
+  padding: 10px;
+  border: 2px solid #e63946;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.08);
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+/* Carrossel de Imagens */
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto 24px auto;
+}
+.carousel-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.10);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.8s;
+  position: relative;
+  z-index: 1;
+}
+.carousel-img.active {
+  display: block;
+  opacity: 1;
+}
